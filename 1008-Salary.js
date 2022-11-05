@@ -3,8 +3,7 @@ var lines = input.split('\n');
 
 var a = parseInt(lines.shift());
 var b = parseInt(lines.shift());
-var c = parseInt(lines.shift());
-var d = parseInt(lines.shift());
+var c = parseFloat(lines.shift());
 
-const DIFERENCA = a * b - c * d;
-console.log(`DIFERENCA = ${DIFERENCA}`);
+console.log(`NUMBER = ${a}`);
+console.log(`SALARY = U$ ${((b*c).toFixed(2))}`);
