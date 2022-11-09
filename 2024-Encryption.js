@@ -8,8 +8,9 @@ let encrypted = "";
 
 msg
 	.split('')
-	.forEach(
-		(letter, index) => (encrypted += String.fromCharCode(letter.charCodeAt(0) + 3))
+	.forEach(letter => (letter.charCodeAt(0) >= 65 && letter.charCodeAt(0) <= 90) || (letter.charCodeAt(0) >= 97 && letter.charCodeAt(0) <= 122)
+		? encrypted += String.fromCharCode(letter.charCodeAt(0) + 3)
+		: encrypted += letter
 	);
 
 encrypted = encrypted
